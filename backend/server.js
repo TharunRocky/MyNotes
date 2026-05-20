@@ -12,10 +12,8 @@ const connectDB =require("./config/db.js");
 const app = express();
 console.log("JWT SECRET:", process.env.JWT_SECRET);
 
-const cors = require("cors");
-
 app.use(cors({
-  origin: "https://my-notes-d11j.vercel.app",
+  origin: "https://my-notes-one-chi.vercel.app",
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   credentials: true,
   allowedHeaders: ["Content-Type", "Authorization"]
