@@ -28,7 +28,7 @@ function Signup() {
       setLoading(true);
 
       const res = await axios.post(
-        "http://localhost:5000/api/auth/signup",
+        "https://mynotes-9754.onrender.com/api/auth/signup",
         form
       );
 
